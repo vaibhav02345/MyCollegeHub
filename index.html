@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCollegeHub - Student Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="nav-logo">
+                <a href="#home" aria-label="MyCollegeHub Home">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#7c3aed"/>
+                        <path d="M6 10 L26 10 L16 4 Z" fill="white"/>
+                        <rect x="8" y="12" width="16" height="12" fill="none" stroke="white" stroke-width="2" rx="1"/>
+                        <path d="M10 16h12M10 18h10M10 20h8" stroke="white" stroke-width="1"/>
+                        <circle cx="24" cy="8" r="3" fill="#fbbf24"/>
+                    </svg>
+                    <span>MyCollegeHub</span>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#notices" role="menuitem">Notices</a></li>
+                <li role="none"><a href="#results" role="menuitem">Results</a></li>
+                <li role="none"><a href="#profile" role="menuitem">Profile</a></li>
+                <li class="dropdown" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        More
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M6 8L2 4h8l-4 4z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="More options">
+                        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                        <li role="none"><a href="#login" role="menuitem">Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero/Banner Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to MyCollegeHub</h1>
+                    <p>Your comprehensive student portal for notices, results, profile management, and more. Stay connected with your academic journey in one centralized platform.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Active Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Departments</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Portal Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Noticeboard Section -->
+        <section id="notices" class="notices-section">
+            <div class="container">
+                <h2>Latest Notices</h2>
+                <div class="table-wrapper">
+                    <table class="notices-table" role="table" aria-label="Recent notices">
+                        <caption class="sr-only">List of recent college notices with date, title, department, and status</caption>
+                        <thead>
+                            <tr role="row">
+                                <th scope="col" role="columnheader">Date</th>
+                                <th scope="col" role="columnheader">Title</th>
+                                <th scope="col" role="columnheader">Department</th>
+                                <th scope="col" role="columnheader">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row">
+                                <td role="gridcell">
+                                    <time datetime="2025-07-20">July 20, 2025</time>
+                                </td>
+                                <td role="gridcell">Semester Examination Schedule Released</td>
+                                <td role="gridcell">Academic Office</td>
+                                <td role="gridcell">
+                                    <span class="status-badge status-active">Active</span>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">
+                                    <time datetime="2025-07-18">July 18, 2025</time>
+                                </td>
+                                <td role="gridcell">Library Hours Extended for Finals</td>
+                                <td role="gridcell">Library</td>
+                                <td role="gridcell">
+                                    <span class="status-badge status-active">Active</span>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">
+                                    <time datetime="2025-07-15">July 15, 2025</time>
+                                </td>
+                                <td role="gridcell">Fee Payment Deadline Reminder</td>
+                                <td role="gridcell">Finance Office</td>
+                                <td role="gridcell">
+                                    <span class="status-badge status-urgent">Urgent</span>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">
+                                    <time datetime="2025-07-12">July 12, 2025</time>
+                                </td>
+                                <td role="gridcell">Campus Maintenance Schedule</td>
+                                <td role="gridcell">Administration</td>
+                                <td role="gridcell">
+                                    <span class="status-badge status-expired">Expired</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="results-section">
+            <div class="container">
+                <h2>Academic Results</h2>
+                <div class="table-wrapper">
+                    <table class="results-table" role="table" aria-label="Semester-wise academic results">
+                        <caption class="sr-only">Student academic results showing subjects, marks obtained, total marks, and grades</caption>
+                        <thead>
+                            <tr role="row">
+                                <th scope="col" role="columnheader">Subject</th>
+                                <th scope="col" role="columnheader">Marks Obtained</th>
+                                <th scope="col" role="columnheader">Total Marks</th>
+                                <th scope="col" role="columnheader">Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row">
+                                <td role="gridcell">Computer Networks</td>
+                                <td role="gridcell">85</td>
+                                <td role="gridcell">100</td>
+                                <td role="gridcell">
+                                    <span class="grade-badge grade-a">A</span>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">Database Management Systems</td>
+                                <td role="gridcell">92</td>
+                                <td role="gridcell">100</td>
+                                <td role="gridcell">
+                                    <span class="grade-badge grade-a">A+</span>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">Software Engineering</td>
+                                <td role="gridcell">78</td>
+                                <td role="gridcell">100</td>
+                                <td role="gridcell">
+                                    <span class="grade-badge grade-b">B+</span>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <td role="gridcell">Operating Systems</td>
+                                <td role="gridcell">88</td>
+                                <td role="gridcell">100</td>
+                                <td role="gridcell">
+                                    <span class="grade-badge grade-a">A</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <h2>Student Profile</h2>
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#2f3336"/>
+                                <circle cx="40" cy="30" r="12" fill="#7c3aed"/>
+                                <path d="M20 65c0-11 9-20 20-20s20 9 20 20" fill="#7c3aed"/>
+                                <!-- Graduation cap -->
+                                <path d="M25 25 L55 25 L40 15 Z" fill="#fbbf24"/>
+                                <rect x="52" y="22" width="6" height="8" fill="#fbbf24"/>
+                                <circle cx="55" cy="30" r="2" fill="#fbbf24"/>
+                            </svg>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Student Information</h3>
+                            <p>Access and manage your academic profile</p>
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Rohan</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Roll No:</span>
+                            <span class="detail-value">CS2021001</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Course:</span>
+                            <span class="detail-value">Computer Science Engineering</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Semester:</span>
+                            <span class="detail-value">6th Semester</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">rohan.cs@college.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Form Section -->
+        <section id="login" class="login-section">
+            <div class="container">
+                <div class="login-form-wrapper">
+                    <form class="login-form" role="form" aria-labelledby="login-heading">
+                        <h2 id="login-heading">Login to MyCollegeHub</h2>
+                        <p class="form-description">Access your student portal with your credentials</p>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                aria-describedby="email-help"
+                                placeholder="Enter your college email"
+                            >
+                            <span id="email-help" class="form-help">Use your official college email address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                class="form-input" 
+                                required 
+                                aria-describedby="password-help"
+                                placeholder="Enter your password"
+                            >
+                            <span id="password-help" class="form-help">Minimum 8 characters required</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role" class="form-label">Select Role</label>
+                            <select id="role" name="role" class="form-select" required aria-describedby="role-help">
+                                <option value="">Choose your role</option>
+                                <option value="student">Student</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                            <span id="role-help" class="form-help">Select your account type</span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1zm3.5 6L8 10.5 4.5 7 6 5.5l2 2 3-3L12.5 6z"/>
+                                </svg>
+                                Sign In
+                            </button>
+                            <a href="#forgot-password" class="forgot-link">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z" stroke="#7c3aed" stroke-width="2" fill="none"/>
+                                    <path d="M3 7l9 6 9-6" stroke="#7c3aed" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@mycollegehub.edu</p>
+                                <p>support@mycollegehub.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke="#7c3aed" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+1 123456789</p>
+                                <p>+1 987654432</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#7c3aed" stroke-width="2" fill="none"/>
+                                    <circle cx="12" cy="10" r="3" stroke="#7c3aed" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p>123 University Avenue</p>
+                                <p>College City, State 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MyCollegeHub</h4>
+                    <p>Empowering students with seamless access to academic resources and information.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#notices">Notices</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#technical">Technical Support</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyCollegeHub. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
