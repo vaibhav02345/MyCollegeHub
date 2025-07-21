@@ -24,7 +24,7 @@
 ---
 
 ## 🔗 Live Demo  
-🔗 Coming soon via GitHub Pages...
+🔗 https://vaibhav02345.github.io/MyCollegeHub/
 
 ---
 
@@ -43,7 +43,7 @@
 Hi, I’m Vaibhav — a BTech CSE (AI & ML) student at GL Bajaj.  
 I'm building real-world projects and learning in public to master full-stack development.
 
-🔗 [LinkedIn](www.linkedin.com/in/vaibhav-codes01)  
+🔗 [LinkedIn](https://www.linkedin.com/in/vaibhav-codes01/)  
 🐦 [Twitter](https://x.com/vaibhxv_1)
 
 ---
